@@ -16,10 +16,12 @@
 
 .banner-title {
     font-size: 3em;
+    font: var(--white-font);
 }
 
 .banner-subtitle {
     font-size: 2.25em;
+    font: var(--white-font);
     padding-left: 0.5em;
     padding-top: 0.25em;
 }
