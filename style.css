@@ -1,13 +1,13 @@
 :root {
-    --white-font: #ffffff;
-    --black-font: #000000;
+    --white: #ffffff;
+    --black: #000000;
 }
 
 .main-container {
     max-width: 72em;
     margin: 0 auto;
     font-family: Inter;
-    color: #000000
+    color: var(--whitte);
 }
 
 .banner {
@@ -16,13 +16,10 @@
 
 .banner-title {
     font-size: 3em;
-    font: var(--white-font);
 }
 
 .banner-subtitle {
     font-size: 2.25em;
-    font: var(--white-font);
-    padding-left: 0.5em;
     padding-top: 0.25em;
 }
 
@@ -37,4 +34,8 @@
 
 .normal-text {
     font-size: 2em;
+}
+
+#banner {
+    grid-area: ban;
 }
