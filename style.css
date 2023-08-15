@@ -3,39 +3,227 @@
     --black: #000000;
 }
 
+
 .main-container {
-    max-width: 72em;
+    max-width: 100em;
     margin: 0 auto;
     font-family: Inter;
-    color: var(--whitte);
+    color: var(--white);
+    background-color: var(--black);
 }
 
+
+/* style for the entire banner */
 .banner {
     padding: 1em;
+    /*background-image: url("pexels-francesco-ungaro-998641.jpg");*/
+    background-size: auto;
 }
 
+/* styling the title of the banner */
 .banner-title {
     font-size: 3em;
 }
 
+/* styling for the banner sub text thats under banner title */
 .banner-subtitle {
     font-size: 2.25em;
     padding-top: 0.25em;
 }
 
-.section {
+/* styling for the text section */
+.content-text {
     display: flex;
     flex-direction: column;
 }
 
+/* for when i use an image */
 .content-image {
     display: flex;
 }
 
+
 .normal-text {
-    font-size: 2em;
+    font-size: 1.5em;
 }
+
 
 #banner {
     grid-area: ban;
+}
+
+/*text for each section*/
+#section-1-1-text {
+    grid-area: 11t;
+}
+
+#section-1-2-text {
+    grid-area: 12t;
+}
+
+#section-1-3-text {
+    grid-area: 13t;
+}
+
+#section-2-1-text {
+    grid-area: 21t;
+}
+
+#section-2-2-text {
+    grid-area: 22t;
+}
+
+#section-2-3-text {
+    grid-area: 23t;
+}
+
+#sectioin-3-1-text {
+    grid-area: 31t;
+}
+
+#section-3-2-text {
+    grid-area: 32t;
+}
+
+/* images for each section*/
+#section-1-1-image {
+    grid-area: 11i;
+}
+
+#section-1-2-image {
+    grid-area: 12i;
+}
+
+#section-1-3-image {
+    grid-area: 13i;
+}
+
+#section-2-1-image {
+    grid-area: 21i;
+}
+
+#section-2-2-image {
+    grid-area: 22i;
+}
+
+#section-2-3-image {
+    grid-area: 23i;
+}
+
+#sectioin-3-1-image {
+    grid-area: 31i;
+}
+
+#section-3-2-image {
+    grid-area: 32i;
+}
+
+/* Flex layout */
+.main-container {
+    display: grid;
+    column-gap: 1em;
+}
+
+/* Responsive layout */
+.main-container {
+    grid-template:
+    "ban"
+        " . "
+        "11i"
+        " . "
+        "11t"
+        " . "
+        "12i"
+        " . "
+        "12t"
+        " . "
+        "13i"
+        " . "
+        "13t"
+        " . "
+        "21i"
+        " . "
+        "21t"
+        " . "
+        "22i"
+        " . "
+        "22t"
+        " . "
+        "23i"
+        " . "
+        "23t"
+        " . "
+        "31i"
+        " . "
+        "31t"
+        " . "
+        "32i"
+        " . "
+        "32t"
+        " . "
+}
+
+@media (min-width: 50em) {
+    .main-container {
+        grid-template:
+        "ban"
+        " . "
+        "11i"
+        " . "
+        "11t"
+        " . "
+        "12i"
+        " . "
+        "12t"
+        " . "
+        "13i"
+        " . "
+        "13t"
+        " . "
+        "21i"
+        " . "
+        "21t"
+        " . "
+        "22i"
+        " . "
+        "22t"
+        " . "
+        "23i"
+        " . "
+        "23t"
+        " . "
+        "31i"
+        " . "
+        "31t"
+        " . "
+        "32i"
+        " . "
+        "32t"
+        " . "
+    }
+}
+
+@media (min-width: 70em) {
+    .main-container {
+        grid-template:
+        "ban ban ban ban ban ban ban ban ban ban ban ban" minmax(6em,auto)
+        " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em,auto)
+        "11i 11i 11i 11i 11i 11i 11t 11t 11t 11t 11t 11t" minmax(15em,auto)
+        " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em,auto)
+        "12i 12i 12i 12i 12i 12i 12t 12t 12t 12t 12t 12t" minmax(15em,auto)
+        " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em,auto)
+        "13i 13i 13i 13i 13i 13i 13t 13t 13t 13t 13t 13t" minmax(15em,auto)
+        " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em,auto)
+        "21i 21i 21i 21i 21i 21i 21t 21t 21t 21t 21t 21t" minmax(15em,auto)
+        " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em,auto)
+        "22i 22i 22i 22i 22i 22i 22t 22t 22t 22t 22t 22t" minmax(15em,auto)
+        " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em,auto)
+        "23i 23i 23i 23i 23i 23i 23t 23t 23t 23t 23t 23t" minmax(15em,auto)
+        " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em,auto)
+        "31i 31i 31i 31i 31i 31i 31t 31t 31t 31t 31t 31t" minmax(15em,auto)
+        " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em,auto)
+        "32i 32i 32i 32i 32i 32i 32t 32t 32t 32t 32t 32t" minmax(15em,auto)
+        " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em,auto)
+        /* check that everything is correct in minmax*/
+    }
 }
