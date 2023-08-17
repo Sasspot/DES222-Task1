@@ -24,7 +24,8 @@
 /* styling the title of the banner */
 .banner-title {
     font-size: 3em;
-    color: var(--yellow)
+    color: var(--yellow);
+    font-weight: bold;
 }
 
 /* styling for the banner sub text thats under banner title */
